@@ -73,7 +73,7 @@ script needed, and nothing runs on pages you haven't opened the popup on.
 
 ## Demo video
 
-See `demo.mp4` (or the linked video in the submission) for a walkthrough of:
+See the linked video for a walkthrough of:
 1. Opening a site with existing storage data
 2. Viewing localStorage / sessionStorage / cookies in the popup
 3. Searching for a specific key/value
