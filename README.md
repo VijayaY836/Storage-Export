@@ -3,7 +3,7 @@
 A browser extension that lets you explore and manage a website's client-side
 storage — `localStorage`, `sessionStorage`, and cookies — from one popup.
 
-Demo Video : https://drive.google.com/file/d/10rFDFf7o7w7pfuTJlNMIfP43HD_BKf_f/view?usp=sharing
+Demo Video : https://drive.google.com/file/d/1M3cYMXQX_9sCfwTh7GUDSLXbRwUVjYcj/view?usp=sharing
 
 For every stored item it shows:
 - **Key**
