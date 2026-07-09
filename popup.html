@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Storage Explorer</title>
+<link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="app">
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="bar bar-a"></span>
+          <span class="bar bar-b"></span>
+          <span class="bar bar-c"></span>
+        </span>
+        <div class="brand-text">
+          <h1>Storage Explorer</h1>
+          <p id="origin" class="origin">loading origin&hellip;</p>
+        </div>
+      </div>
+      <button id="refreshBtn" class="icon-btn" title="Refresh">⟳</button>
+    </header>
+
+    <div class="searchbar">
+      <input id="searchInput" type="text" placeholder="Search keys or values&hellip;" autocomplete="off" />
+      <span id="resultCount" class="result-count"></span>
+    </div>
+
+    <nav class="tabs" id="tabs">
+      <button class="tab active" data-type="all">All <span class="count" id="count-all">0</span></button>
+      <button class="tab" data-type="local">Local <span class="count" id="count-local">0</span></button>
+      <button class="tab" data-type="session">Session <span class="count" id="count-session">0</span></button>
+      <button class="tab" data-type="cookie">Cookies <span class="count" id="count-cookie">0</span></button>
+    </nav>
+
+    <div class="table-header">
+      <span class="col col-type">Type</span>
+      <span class="col col-key">Key</span>
+      <span class="col col-value">Value</span>
+      <span class="col col-size">Size</span>
+      <span class="col col-actions"></span>
+    </div>
+
+    <main id="rows" class="rows">
+      <div class="empty-state" id="emptyState">
+        <p>Nothing here yet.</p>
+        <span>Open a site tab, then hit refresh.</span>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span id="totalSize" class="total-size"></span>
+      <div class="footer-actions">
+        <button id="exportBtn" class="text-btn">Export JSON</button>
+        <button id="clearAllBtn" class="text-btn danger">Clear all in view</button>
+      </div>
+    </footer>
+
+  </div>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
